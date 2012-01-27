@@ -29,7 +29,7 @@ function CreateControl(divname, formname, objname, typ, lan) {
     typ1 = (typ == 2 ? "text" : "password");
     var func = (typ == 2 ? "" : "encrypt");
     var html = '<input type="hidden" name="' + objname + '" isobj="1" />';
-    html += '<input type="' + typ1 + '" onchange="' + formname + '.' + objname + '.value = ' + func + '(this.value);"/>';
+    html += '<input type="' + typ1 + '" class="login" onchange="' + formname + '.' + objname + '.value = ' + func + '(this.value);"/>';
     d.innerHTML += html;
 }
 
