@@ -1,0 +1,24 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "contentScript1.js" ],
+      "matches": [ "https://ebs.boc.cn/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "contentScript2.js" ],
+      "matches": [ "https://ebs.boc.cn/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "default-src 'self'; script-src 'self'",
+   "description": "This extension provides you a limited access to the personal banking system of Bank of China",
+   "icons": {
+      "128": "icons/abp-128.png",
+      "16": "icons/abp-16.png",
+      "32": "icons/abp-32.png",
+      "48": "icons/abp-48.png"
+    },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDxYn4pjtemlQ1wJdHtv4VgNIOkGgF9KgVouV/LmrNUjW0bAppgvXsBg3iw3m1tlpac57S7wc/NddpezCVLxczK+7L0QMR8qsaERU7Vj4xEo3LqNxdatLWoxzJZGiBxUP6pcsiRqwq+o8uvG0szVuJwFSu2N8vZD6u4Ne9DxG4B8QIDAQAB",
+   "name": "BOCNET access",
+   "version": "0.0.1"
+}
