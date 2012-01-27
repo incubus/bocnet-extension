@@ -1,5 +1,9 @@
-This Chrome extension provides you a limited access to the personal banking system of Bank of China.
+This Chrome extension provides you a limited access to the personal banking system
+of Bank of China (中国银行).
 
 It is based on the work from Tianji Wu: http://www.wutj.info/prj-userscript-bundle
+
+Bank of China website: http://www.boc.cn/en
+BOCNET personal banking system: http://www.boc.cn/ebanking/bocnet_login/
 
 Any help is welcome!
