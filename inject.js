@@ -274,8 +274,4 @@ function onYouTubeBeforeLoad() {
     }
 }
 
-function onYouTubeBeforeLoad1() {
-    alert('fdf');
-}
-
 document.addEventListener("beforeload", onYouTubeBeforeLoad, true);
