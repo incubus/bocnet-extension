@@ -257,7 +257,7 @@ function Base64Encode(input) {
     return output;
 }
 
-function onYouTubeBeforeLoad() {
+function onBOCBeforeLoad() {
     if (document.body) {
         document.body.onload = function () {
             if (document.getElementById("validImage")) {
@@ -274,4 +274,4 @@ function onYouTubeBeforeLoad() {
     }
 }
 
-document.addEventListener("beforeload", onYouTubeBeforeLoad, true);
+document.addEventListener("beforeload", onBOCBeforeLoad, true);
