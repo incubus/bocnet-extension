@@ -22,7 +22,9 @@ var scripts = [
 //  "bocjs/CurCode.js",
 //  "bocjs/calendar.js",
   "bocjs/FormatMoneyShow.js",
-  "bocjs/FormatMoneyBase.js"
+  "bocjs/FormatMoneyBase.js",
+  "bocjs/register.js",
+  "bocjs/userInfo.js"
 ];
 
 function injectScript(url) {
