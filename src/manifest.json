@@ -8,6 +8,7 @@
    } ],
    "content_security_policy": "default-src 'self'; script-src 'self'",
    "description": "This extension provides you a limited access to the personal banking system of Bank of China",
+   "homepage_url": "https://github.com/incubus/bocnet-chrome-extension",
    "icons": {
       "128": "icons/abp-128.png",
       "16": "icons/abp-16.png",
