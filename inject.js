@@ -265,13 +265,6 @@ function onBOCBeforeLoad() {
             }
         };
     }
-    if (!(document.getElementById("pi"))) {
-        script = document.createElement("script");
-        script.id = "pi";
-        script.type = "text/javascript";
-        script.innerText = "function pageInit() { refreshImage(); }";
-        document.head.appendChild(script);
-    }
 }
 
 document.addEventListener("beforeload", onBOCBeforeLoad, true);
