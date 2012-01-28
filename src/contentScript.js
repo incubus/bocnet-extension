@@ -11,7 +11,7 @@
 // resources_zh_CN_CurCode.js - Joined resources_zh_CN.js and CurCode.js files
 var scripts = [
   "IEProxy.js",
-  "SHA1.js",
+  "Utils.js",
   "bocjs/md5.js",
 //  "bocjs/resources_zh_CN.js",
   "bocjs/resources_zh_CN_CurCode.js",
