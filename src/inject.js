@@ -4,10 +4,6 @@
  * http://mozilla.org/MPL/2.0/.
  */
 
-Object.prototype.attachEvent = function (sEvent, fnHandler, bUseCapture) {
-    this.addEventListener(sEvent.indexOf('on') == 0 ? sEvent.replace('on', '') : sEvent, fnHandler, bUseCapture);
-}
-
 function passControlCheck(obj, typ, lan) {
     return true;
 }
