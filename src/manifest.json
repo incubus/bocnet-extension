@@ -2,7 +2,7 @@
    "background_page": "background.html",
    "content_scripts": [ {
       "all_frames": true,
-      "js": [ "inject.js" ],
+      "js": [ "contentScript.js" ],
       "matches": [ "https://ebs.boc.cn/*" ],
       "run_at": "document_start"
    } ],
