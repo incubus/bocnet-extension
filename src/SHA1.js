@@ -2,6 +2,10 @@ function encrypt(msg) {
     return Base64Encode(SHA1(msg));
 }
 
+function ActiveXObject(obj) {
+    return new XMLHttpRequest();
+}
+
 // =========== SHA1 ===============
 /**
  *
