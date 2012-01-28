@@ -5,11 +5,11 @@ var rs = "";
 
 function CreateControl(DivID, Form, ObjectID, mode, language) {
 	var d = document.getElementById(DivID);
-	var obj = document.createElement('object');
+	var obj = document.createElement('input');
+	obj.type = "hidden";
+	obj.name = ObjectID;
+	obj.setAttribute("isobj", "1");
 	d.appendChild(obj);
-	obj.width = 162;
-	obj.height = 20;
-	obj.classid="clsid:E61E8363-041F-455c-8AD0-8A61F1D8E540";
 	obj.id=ObjectID;
 
 	var version = getVersion(obj);
@@ -22,6 +22,12 @@ function CreateControl(DivID, Form, ObjectID, mode, language) {
 			rc = obj.RandomKey_C;
 		}
 	}
+	var func = (mode == 2 ? "" : "encrypt");
+	input = document.createElement('input');
+	input.type = (mode == 2 ? "text" : "password");
+	input.setAttribute("onChange", Form + "." + ObjectID + ".value = " + func + "(this.value);");
+	input.className = "login";
+	d.appendChild(input);
 	return rc;
 }
 
@@ -97,6 +103,7 @@ function passControlCheck(obj, mode, language) {
 	try	{
 		var version = getVersion(obj);
 		passInit(obj, mode, language, version);
+		return true;
 		if (version < 65539) {//66560 1.4.0.0 //66306 1.3.0.2 //66305 1.3.0.1 //65539 1.3.0
 			alert(SAFECONTROL_VERSION);
 			return false;
@@ -114,6 +121,7 @@ function passControlCheck(obj, mode, language) {
  */
 
 function passInit(obj, mode, language, version) {
+	return 0;
 	obj.SetLanguage(language);
 	//口令
 	if (mode == 0) {
