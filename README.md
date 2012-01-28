@@ -5,6 +5,8 @@ of Bank of China (中国银行).
 
 It is based on the work and ideas from [np-activex project](http://code.google.com/p/np-activex/) and [Tianji Wu](http://www.wutj.info/prj-userscript-bundle)
 
+Icon design by [Vitaly Usov](http://shutterstock.com/g/vitalyusov)
+
 Any help is welcome!
 
 ## Information
