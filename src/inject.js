@@ -16,6 +16,21 @@ function isEmpty() {
     return false;
 }
 
+function check_empty() {
+    return true;
+}
+
+function regex_match() {
+    return true;
+}
+
+function regex_match_msg() {
+    return true;
+}
+
+function pageProcessing() {
+}
+
 function getVersion() {
     return 65539;
 }
