@@ -15,8 +15,6 @@ Bank of China website: http://www.boc.cn/en
 
 BOCNET personal banking system: http://www.boc.cn/ebanking/bocnet_login/
 
-Any help is welcome!
-
 ## License
 
 This Source Code is subject to the terms of the Mozilla Public License
