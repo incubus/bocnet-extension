@@ -6,6 +6,8 @@
 
 // All the files from bocjs directory are downloaded from BOC site directly
 // or decoded via http://www.greymagic.com/security/tools/decoder/
+// Except:
+// createElement.js - Removed ActiveX control. See https://github.com/incubus/bocnet-chrome-extension/commit/6c6dc591331cad78b3af0ac80418f9f231582252
 var scripts = [
   "IEProxy.js",
   "SHA1.js",
