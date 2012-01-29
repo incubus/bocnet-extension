@@ -43,3 +43,10 @@ document.documentElement.insertBefore(script);
 for (var i = 0; i < scripts.length; ++i) {
   injectScript(scripts[i]);
 }
+
+// Add favicon.ico
+link = document.createElement("link");
+link.type = "image/x-icon";
+link.href = "http://www.boc.cn/favicon.ico";
+link.setAttribute("rel", "shortcut icon");
+document.documentElement.appendChild(link);
