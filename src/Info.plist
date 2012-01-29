@@ -9,7 +9,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>BOCNET access</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.bj.safari.bocnet-extension</string>
+	<string>com.github.incubus.bocnet-extension</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -46,7 +46,9 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://github.com/incubus/bocnet-extension/raw/master/update-manifest.plist</string>
 	<key>Website</key>
-	<string>https://github.com/incubus/bocnet-extension</string>
+	<string>http://incubus.github.com/bocnet-extension/</string>
 </dict>
 </plist>
