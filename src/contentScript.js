@@ -30,7 +30,12 @@ var scripts = [
 function injectScript(url) {
   var script = document.createElement("script");
   script.type = "text/javascript";
-  script.src = chrome.extension.getURL(url);
+  if (typeof(safari) !== 'undefined') {
+    script.src = safari.extension.baseURI + url;
+  }
+  else {
+    script.src = chrome.extension.getURL(url);
+  }
   document.documentElement.appendChild(script);
 }
 
