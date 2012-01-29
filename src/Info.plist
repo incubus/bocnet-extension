@@ -47,7 +47,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>https://github.com/incubus/bocnet-extension/raw/master/update-manifest.plist</string>
+	<string>https://raw.github.com/incubus/bocnet-extension/master/update-manifest.plist</string>
 	<key>Website</key>
 	<string>http://incubus.github.com/bocnet-extension/</string>
 </dict>
