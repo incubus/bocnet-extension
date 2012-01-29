@@ -25,7 +25,7 @@ function CreateControl(DivID, Form, ObjectID, mode, language) {
 	var func = (mode == 2 ? "" : "encrypt");
 	input = document.createElement('input');
 	input.type = (mode == 2 ? "text" : "password");
-	input.setAttribute("onChange", Form + "." + ObjectID + ".value = " + func + "(this.value);");
+	input.setAttribute("onChange", "form1." + ObjectID + ".value = " + func + "(this.value);");
 	input.className = "login";
 	d.appendChild(input);
 	return rc;
