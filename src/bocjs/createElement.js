@@ -22,10 +22,9 @@ function CreateControl(DivID, Form, ObjectID, mode, language) {
 			rc = obj.RandomKey_C;
 		}
 	}
-	var func = (mode == 2 ? "" : "encrypt");
 	input = document.createElement('input');
 	input.type = (mode == 2 ? "text" : "password");
-	input.setAttribute("onChange", "form1." + ObjectID + ".value = " + func + "(this.value);");
+	input.setAttribute("onChange", "form1." + ObjectID + ".value = " + (mode == 2 ? "" : "encrypt") + "(this.value);");
 	input.className = "login";
 	d.appendChild(input);
 	return rc;
