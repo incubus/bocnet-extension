@@ -1,7 +1,7 @@
 # BOCNET access
 
-This Chrome extension provides you a limited access to the personal banking system
-of Bank of China (中国银行).
+This extension provides you a limited access to the personal banking system
+of Bank of China (中国银行) from Chrome and Safari browsers.
 
 It is based on the work and ideas from [np-activex project](http://code.google.com/p/np-activex/) and [Tianji Wu](http://www.wutj.info/prj-userscript-bundle)
 
