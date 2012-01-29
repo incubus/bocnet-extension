@@ -7,7 +7,7 @@ function ActiveXObject(obj) {
 }
 
 function showCalendar() {
-    alert("Sorry, calendar is not yet supported. You can manually change the dates.");
+    alert("Sorry, the calendar is not yet supported. You can manually change the dates.");
 }
 
 // =========== SHA1 ===============
