@@ -12,7 +12,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(function (details) {
     var headers = details.requestHeaders;
     for (var i = 0; i < headers.length; ++i) {
         if (headers[i].name == "User-Agent") {
-            headers[i].value = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)"
+            headers[i].value = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)";
             break;
         }
     }
