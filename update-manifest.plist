@@ -14,7 +14,7 @@
        <key>CFBundleShortVersionString</key>
        <string>0.0.5</string>
        <key>URL</key>
-       <string>https://github.com/incubus/bocnet-extension/raw/master/bocnet-extension.safariextz</string>
+       <string>http://cloud.github.com/downloads/incubus/bocnet-extension/bocnet-extension-0.0.5.safariextz</string>
      </dict>
    </array>
 </dict>
