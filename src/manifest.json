@@ -15,7 +15,7 @@
       "32": "icons/32.png",
       "48": "icons/48.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDxYn4pjtemlQ1wJdHtv4VgNIOkGgF9KgVouV/LmrNUjW0bAppgvXsBg3iw3m1tlpac57S7wc/NddpezCVLxczK+7L0QMR8qsaERU7Vj4xEo3LqNxdatLWoxzJZGiBxUP6pcsiRqwq+o8uvG0szVuJwFSu2N8vZD6u4Ne9DxG4B8QIDAQAB",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+2b459N4KI/Vels9j9IJmY2a5/liIp+WCpuy/T8VmFhC21OjVG56uprrZzNZQL8UOCd2qkoZWd8ZxWqIqllaEeJ1GJsaTk2laBsgdeDrcMscTgBpKqj+vYRNGQeukKOlqeiswf4f3Ol2v7BBF42ozL/rdWJu4aaGzTMFeYqAfOwIDAQAB",
    "name": "BOCNET access",
    "permissions": [ "webRequest", "webRequestBlocking", "https://ebs.boc.cn/*" ],
    "version": "0.0.5"
