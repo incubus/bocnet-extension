@@ -34,6 +34,7 @@ function injectScript(url) {
   document.documentElement.appendChild(script);
 }
 
+// Add window.attachEvent function
 script = document.createElement("script");
 script.type = "text/javascript";
 script.innerText = "Object.prototype.attachEvent = function (sEvent, fnHandler, bUseCapture) { this.addEventListener(sEvent.indexOf('on') == 0 ? sEvent.replace('on', '') : sEvent, fnHandler, bUseCapture);};";
