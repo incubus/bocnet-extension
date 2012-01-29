@@ -6,6 +6,10 @@ function ActiveXObject(obj) {
     return new XMLHttpRequest();
 }
 
+function showCalendar() {
+    alert("Sorry, calendar is not yet supported. You can manually change the dates.");
+}
+
 // =========== SHA1 ===============
 /**
  *
