@@ -55,3 +55,17 @@ link.type = "image/x-icon";
 link.href = "http://www.boc.cn/favicon.ico";
 link.setAttribute("rel", "shortcut icon");
 document.documentElement.appendChild(link);
+
+function onBOCBeforeLoad() {
+  if (document.body) {
+    document.body.onload = function () {
+      if (document.getElementById("validImage")) {
+        document.all.validImage.src = "ImageValidation/validation" + Math.round(Math.random()*0x7fffffff) + ".gif";
+      }
+    };
+  }
+}
+
+if (typeof(safari) !== 'undefined') {
+  document.addEventListener("beforeload", onBOCBeforeLoad, true);
+}
