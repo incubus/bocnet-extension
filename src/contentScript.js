@@ -57,7 +57,7 @@ link.setAttribute("rel", "shortcut icon");
 document.documentElement.appendChild(link);
 
 function onBOCBeforeLoad() {
-  if (document.body) {
+  if (document.body && document.getElementById("validImage")) {
     document.body.onload = function () {
       if (document.getElementById("validImage")) {
         document.all.validImage.src = "ImageValidation/validation" + Math.round(Math.random()*0x7fffffff) + ".gif";
