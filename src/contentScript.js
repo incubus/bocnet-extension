@@ -10,33 +10,33 @@
 // createElement.js - Removed ActiveX control. See https://github.com/incubus/bocnet-extension/commits/master/src/bocjs/createElement.js
 // resources_zh_CN_CurCode.js - Joined resources_zh_CN.js and CurCode.js files
 var scripts = [
-  "IEProxy.js",
-  "Utils.js",
-  "bocjs/md5.js",
-//  "bocjs/resources_zh_CN.js",
-  "bocjs/resources_zh_CN_CurCode.js",
-  "bocjs/common.js",
-  "bocjs/PageLimit.js",
-  "bocjs/FormCheck.js",
-  "bocjs/createElement.js",
-//  "bocjs/CurCode.js",
-//  "bocjs/calendar.js",
-  "bocjs/FormatMoneyShow.js",
-  "bocjs/FormatMoneyBase.js",
-  "bocjs/register.js",
-  "bocjs/userInfo.js"
-];
+    "IEProxy.js",
+    "Utils.js",
+    "bocjs/md5.js",
+    // "bocjs/resources_zh_CN.js",
+    "bocjs/resources_zh_CN_CurCode.js",
+    "bocjs/common.js",
+    "bocjs/PageLimit.js",
+    "bocjs/FormCheck.js",
+    "bocjs/createElement.js",
+    // "bocjs/CurCode.js",
+    // "bocjs/calendar.js",
+    "bocjs/FormatMoneyShow.js",
+    "bocjs/FormatMoneyBase.js",
+    "bocjs/register.js",
+    "bocjs/userInfo.js"
+    ];
 
 function injectScript(url) {
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  if (typeof(safari) !== 'undefined') {
-    script.src = safari.extension.baseURI + url;
-  }
-  else {
-    script.src = chrome.extension.getURL(url);
-  }
-  document.documentElement.appendChild(script);
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    if (typeof(safari) !== 'undefined') {
+        script.src = safari.extension.baseURI + url;
+    }
+    else {
+        script.src = chrome.extension.getURL(url);
+    }
+    document.documentElement.appendChild(script);
 }
 
 // Add window.attachEvent function
@@ -46,7 +46,7 @@ script.innerText = "Object.prototype.attachEvent = function (sEvent, fnHandler, 
 document.documentElement.insertBefore(script);
 
 for (var i = 0; i < scripts.length; ++i) {
-  injectScript(scripts[i]);
+    injectScript(scripts[i]);
 }
 
 // Add favicon.ico
@@ -57,15 +57,15 @@ link.setAttribute("rel", "shortcut icon");
 document.documentElement.appendChild(link);
 
 function onBOCBeforeLoad() {
-  if (document.body && document.getElementById("validImage")) {
-    document.body.onload = function () {
-      if (document.getElementById("validImage")) {
-        document.all.validImage.src = "ImageValidation/validation" + Math.round(Math.random()*0x7fffffff) + ".gif";
-      }
-    };
-  }
+    if (document.body && document.getElementById("validImage")) {
+        document.body.onload = function() {
+            if (document.getElementById("validImage")) {
+                document.all.validImage.src = "ImageValidation/validation" + Math.round(Math.random() * 0x7fffffff) + ".gif";
+            }
+        };
+    }
 }
 
 if (typeof(safari) !== 'undefined') {
-  document.addEventListener("beforeload", onBOCBeforeLoad, true);
+    document.addEventListener("beforeload", onBOCBeforeLoad, true);
 }
