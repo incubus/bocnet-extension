@@ -32,7 +32,7 @@ function injectScript(url) {
     var script = document.createElement("script");
     script.type = "text/javascript";
     if (typeof(safari) !== 'undefined') {
-        file = safari.extension.baseURI + url;
+        fileurl = safari.extension.baseURI + url;
     }
     else {
         fileurl = chrome.extension.getURL(url);
