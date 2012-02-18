@@ -13,13 +13,13 @@ var scripts = [
     "IEProxy.js",
     "Utils.js",
     "bocjs/md5.js",
-    "bocjs/resources_zh_CN.js",
-//    "bocjs/resources_zh_CN_CurCode.js",
+    // "bocjs/resources_zh_CN.js",
+    "bocjs/resources_zh_CN_CurCode.js",
     "bocjs/common.js",
     "bocjs/PageLimit.js",
     "bocjs/FormCheck.js",
     "bocjs/createElement.js",
-    "bocjs/CurCode.js",
+    // "bocjs/CurCode.js",
     // "bocjs/calendar.js",
     "bocjs/FormatMoneyShow.js",
     "bocjs/FormatMoneyBase.js",
@@ -28,19 +28,17 @@ var scripts = [
     ];
 
 function injectScript(url) {
-    var fileurl;
     var script = document.createElement("script");
     script.type = "text/javascript";
     if (typeof(safari) !== 'undefined') {
-        fileurl = safari.extension.baseURI + url;
+        script.src = safari.extension.baseURI + url;
     }
     else {
-        fileurl = chrome.extension.getURL(url);
+        var req = new XMLHttpRequest();
+        req.open("GET", chrome.extension.getURL(url), false);
+        req.send();
+        script.innerHTML = req.responseText;
     }
-    var req = new XMLHttpRequest();
-    req.open("GET", fileurl, false);
-    req.send();
-    script.innerHTML = req.responseText;
     document.documentElement.appendChild(script);
 }
 
