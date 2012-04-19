@@ -17,6 +17,7 @@ var scripts = [
     "bocjs/resources_zh_CN_CurCode.js",
     "bocjs/common.js",
     "bocjs/PageLimit.js",
+    "bocjs/ListCheck.js",
     "bocjs/FormCheck.js",
     "bocjs/createElement.js",
     // "bocjs/CurCode.js",
