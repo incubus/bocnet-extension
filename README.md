@@ -9,6 +9,10 @@ Icon design by [Vitaly Usov](http://shutterstock.com/g/vitalyusov)
 
 Any help is welcome!
 
+## Chrome extension
+
+Chrome Web Store: https://chrome.google.com/webstore/detail/ldbjociohhfkjnoaagbpiafgaodepgld
+
 ## Information
 
 Bank of China website: http://www.boc.cn/en
