@@ -1,5 +1,5 @@
 {
-   "background_page": "background.html",
+   "background": { "scripts": ["background.js"] },
    "content_scripts": [ {
       "all_frames": true,
       "js": [ "contentScript.js" ],
@@ -15,8 +15,13 @@
       "32": "icons/32.png",
       "48": "icons/48.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+2b459N4KI/Vels9j9IJmY2a5/liIp+WCpuy/T8VmFhC21OjVG56uprrZzNZQL8UOCd2qkoZWd8ZxWqIqllaEeJ1GJsaTk2laBsgdeDrcMscTgBpKqj+vYRNGQeukKOlqeiswf4f3Ol2v7BBF42ozL/rdWJu4aaGzTMFeYqAfOwIDAQAB",
+   "manifest_version": 2,
    "name": "BOCNET access",
    "permissions": [ "webRequest", "webRequestBlocking", "https://ebs.boc.cn/*" ],
-   "version": "0.0.8"
+   "web_accessible_resources": [
+     "IEProxy.js",
+     "Utils.js",
+     "createElement.js"
+   ],
+   "version": "0.0.10"
 }
