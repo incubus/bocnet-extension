@@ -18,5 +18,5 @@
    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+2b459N4KI/Vels9j9IJmY2a5/liIp+WCpuy/T8VmFhC21OjVG56uprrZzNZQL8UOCd2qkoZWd8ZxWqIqllaEeJ1GJsaTk2laBsgdeDrcMscTgBpKqj+vYRNGQeukKOlqeiswf4f3Ol2v7BBF42ozL/rdWJu4aaGzTMFeYqAfOwIDAQAB",
    "name": "BOCNET access",
    "permissions": [ "webRequest", "webRequestBlocking", "https://ebs.boc.cn/*" ],
-   "version": "0.0.7"
+   "version": "0.0.8"
 }
