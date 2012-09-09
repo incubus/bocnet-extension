@@ -7,6 +7,9 @@
 var requestFilter = {
     urls: ["https://ebs.boc.cn/*"]
 };
+var skipJSFilter = {
+    urls: ["https://ebs.boc.cn/BocnetClient/common/js-src/createElement.js"]
+};
 
 chrome.webRequest.onBeforeSendHeaders.addListener(function (details) {
     var headers = details.requestHeaders;
@@ -20,3 +23,10 @@ chrome.webRequest.onBeforeSendHeaders.addListener(function (details) {
         requestHeaders: headers
     };
 }, requestFilter, ["requestHeaders", "blocking"]);
+
+chrome.webRequest.onBeforeRequest.addListener(function() {
+  return {
+    cancel: true
+  };
+}, skipJSFilter, ["blocking"]);
+
