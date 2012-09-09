@@ -12,20 +12,7 @@
 var scripts = [
     "IEProxy.js",
     "Utils.js",
-    "bocjs/md5.js",
-    // "bocjs/resources_zh_CN.js",
-    "bocjs/resources_zh_CN_CurCode.js",
-    "bocjs/common.js",
-    "bocjs/PageLimit.js",
-    "bocjs/ListCheck.js",
-    "bocjs/FormCheck.js",
-    "bocjs/createElement.js",
-    // "bocjs/CurCode.js",
-    // "bocjs/calendar.js",
-    "bocjs/FormatMoneyShow.js",
-    "bocjs/FormatMoneyBase.js",
-    "bocjs/register.js",
-    "bocjs/userInfo.js"
+    "createElement.js"
     ];
 
 function injectScript(url) {
